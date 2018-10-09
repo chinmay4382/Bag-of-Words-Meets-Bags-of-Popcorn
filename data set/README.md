@@ -1,7 +1,7 @@
 # Kaggle: Bag of Words Meets Bags of Popcorn
 
 
-*Information extracted from the [Kaggle corresponding page](https://www.kaggle.com/c/word2vec-nlp-tutorial/data)*.
+*The data set can be downloaded from [Kaggle page](https://www.kaggle.com/c/word2vec-nlp-tutorial/data)*.
 
 ### Data Set
 
