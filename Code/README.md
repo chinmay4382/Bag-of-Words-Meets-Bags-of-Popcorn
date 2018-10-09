@@ -3,7 +3,7 @@ Solution for the Kaggle Data Science competition "Bag of Words Meets Bags of Pop
 
 https://www.kaggle.com/c/word2vec-nlp-tutorial
 
-##Description
+## Description
 By learning from a list of already classified movie reviews, the algorithm needs to predict if a new one is either positive or 
 negative. 
 
