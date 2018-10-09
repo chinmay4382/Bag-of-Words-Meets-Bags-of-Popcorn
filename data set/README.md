@@ -20,5 +20,5 @@ The labeled data set consists of 50,000 IMDB movie reviews, specially selected f
 ### Data fields
 
 + __id__ - Unique ID of each review
-+ __ sentiment__ - Sentiment of the review ; 1 for positive reviews and 0 for negative reviews
++ __sentiment__ - Sentiment of the review ; 1 for positive reviews and 0 for negative reviews
 + __review__ - Text of the review
