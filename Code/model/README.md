@@ -1,51 +1,24 @@
 # Kaggle: Bag of Words Meets Bags of Popcorn
 
 
-## Table of Contents  
-- [Project Overview](#project-overview)
-- [Install](#install)
-- [Code](#code)
-- [Run](#run)
-- [Data](#data)
+### Training the Model
 
+         To train a Word2Vec model "unlabeledTrain.tsv" is used which contains 50,000 additional reviews with no labels.The Word2Vec can learn from unlabeled data, these extra 50,000 reviews can now be used.
 
-### <a name="project-overview"></a>Project Overview
+   There are a number of parameter choices that affect the run time and the quality of the final model that is produced.
+   
+   +**Architecture**: Architecture options are skip-gram (default) or continuous bag of words. We found that skip-gram was very       slightly slower but produced better results.
+   
+   +**Training algorithm**: Hierarchical softmax (default) or negative sampling. For us, the default worked well.
+   
+   +**Downsampling of frequent words:** The Google documentation recommends values between .00001 and .001. For us, values closer 0.001 seemed to improve the accuracy of the final model.
+   
+   +**Word vector dimensionality:** More features result in longer runtimes, and often, but not always, result in better models. Reasonable values can be in the tens to hundreds; we used 300.
+   
+   +**Context / window size:** How many words of context should the training algorithm take into account? 10 seems to work well for hierarchical softmax (more is better, up to a point).
+   
+   +**Worker threads:** Number of parallel processes to run. This is computer-specific, but between 4 and 6 should work on most systems.
+   
+   +**Minimum word count:** This helps limit the size of the vocabulary to meaningful words. Any word that does not occur at least this many times across all documents is ignored. Reasonable values could be between 10 and 100. In this case, since each movie occurs 30 times, we set the minimum word count to 40, to avoid attaching too much importance to individual movie titles. This resulted in an overall vocabulary size of around 15,000 words. Higher values also help limit run time.
 
-Project information can be found at [kaggle](https://www.kaggle.com/c/word2vec-nlp-tutorial).
-
-This mini-project contains a practice of using Bag-of-Words with a Random Forest Classifier to learn IMDB review text and predict review sentiment labels.
-
-
-### <a name="install"></a>Install
-
-This project requires **Python 2.7** and the following Python libraries installed:
-
-- [NumPy](http://www.numpy.org/)
-- [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
-- [nltk](http://www.nltk.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
-- [XGBoost](https://xgboost.readthedocs.io/en/latest/)
-
-You will also need to have software installed to run and execute a [Jupyter Notebook](http://jupyter.org/)
-
-Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
-
-
-### <a name="code"></a>Code
-
-Complete code is provided in the `notebook.ipynb` notebook file. You will also be required to use the dataset file in `data` directory to complete your work.
-
-
-### <a name="run"></a>Run
-
-In a terminal or command window, navigate to the top-level project directory (that contains this README) and run the following command:
-
-```jupyter notebook notebook.ipynb```
-
-This will open the Jupyter Notebook software and project file in your browser.
-
-
-### <a name='data'></a>Data
-
-Training and test data can be downloaded [here](https://www.kaggle.com/c/word2vec-nlp-tutorial/data).
 
