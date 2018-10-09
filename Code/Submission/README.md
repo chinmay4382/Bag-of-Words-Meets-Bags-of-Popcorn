@@ -10,4 +10,16 @@
      + With Word2Vec vector representation of words (see [Kaggle tutorial](https://www.kaggle.com/c/word2vec-nlp-tutorial/details/part-3-more-fun-with-word-vectors)) (__300__ features)
  
  ## Results : Prediction accuracy scores
+ 
+ ### Random Forest
+ 
+ + BoW:
+ + Word2Vec:
+ 
+ 
+ 
+ ### Naive Bayes
+ 
+ + BoW:
+ + Word2Vec:
   
