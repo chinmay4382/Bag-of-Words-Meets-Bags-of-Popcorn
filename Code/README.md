@@ -1,74 +1,46 @@
-# Kaggle-Word2vec
+# Kaggle: Bag of Words Meets Bags of Popcorn
 Solution for the Kaggle Data Science competition "Bag of Words Meets Bags of Popcorn"
 
 https://www.kaggle.com/c/word2vec-nlp-tutorial
 
 ##Description
-By learning from a list of already classified movie reviews, the algorithm needs to predict if a new one is either positive or negative. 
+By learning from a list of already classified movie reviews, the algorithm needs to predict if a new one is either positive or 
+negative. 
 
-##Solution
-
-###Input
-
-####Labeled reviews
-data/labeledTrainData.tsv
-
-####Unlabeled reviews
-data/unlabeledTrainData.tsv
-
-###Parser
-For both labeled and unlabeled reviews:
-* Preserve relevant text
-* Hashing trick (dimensions, wrapped words)
-
-###Training and Clasification
-
-####Algorithms:
-* Naive Bayes
-* Perceptron
-
-####Steps
-For each algorithm:
-
-1) Train with labeled reviews
-
-2) Clasify unlabeled reviews (give probability based on previous learning)
-
-3) Define weight
-
-Then, for each unlabeled review:
-
-1) Calculate the normalized resulting probability based on weights 
-
-2) Round probability to 0 or 1 (Negative or possitive)
-
-###Output
-output/submission.tsv
+# Dependencies
+- pandas &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install pandas
+- numpy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pip3 install numpy
+- BeautifulSoup4 &nbsp; pip3 install bs4
+- nltk &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install nltk [Details](http://www.nltk.org/install.html)
+- gensim&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install gensim
+- sklearn &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install sklearn
 
 
-##Programming Language
-C++
+### Preprocessing
 
-##Libraries
-The most important included library is Boost.
+- 1.Remove HTML using "BeautifulSoup4"
+- 2.Remove non-letters using "re" 
+- 3.Convert to lower case, split into individual words using inbuilt methods ".lower()" and ".split()"
+- 4.Remove stop words :These are frequently occurring words that don't carry much meaning [Details](https://en.wikipedia.org/wiki/Stop_words)
 
-##Installation
-###Windows
-Follow installation.txt
+### Creating Features from a Bag of Words (Using scikit-learn) (bow.ipynb)
 
-###Linux
-Submodules init and update for root and boost folders
+The Bag of Words model learns a vocabulary from all of the documents, then models each document by counting the number of times 
+each word appears. For example, consider the following two sentences:
 
-##Context
-FIUBA (Buenos Aires Engineering University) 
+In the IMDB data, we have a very large number of reviews, which will give us a large vocabulary. To limit the size of the feature
+vectors, we should choose some maximum vocabulary size. Below, we use the 5000 most frequent words 
+(remembering that stop words have already been removed)
 
-Exercise for: 75.06 "Organización de datos" (Data Organization)
+### Model fitting
 
-Date: 06/2015 
+It does two functions: 
+**First,** it fits the model and learns the vocabulary; 
+**Second,** it transforms our training data into feature vectors.
 
-##Competition
-Team name: Grupo MAS
 
-Position: 184
+### [Random Forest](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
-Score: 0.94643
+(Random Forest uses many tree-based classifiers to make predictions, hence the "forest"). Below, we set the number of trees to 100 as a reasonable default value. More trees may (or may not) perform better, but will certainly take longer to run. Likewise, the more features you include for each review, the longer this will take.
+
+
