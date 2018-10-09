@@ -2,9 +2,8 @@
 
 
 ### Training the Model
-
-    To train a Word2Vec model "unlabeledTrain.tsv" is used which contains 50,000 additional reviews with no labels.The
-     Word2Vec can learn from unlabeled data, these extra 50,000 reviews can now be used.
+To train a Word2Vec model "unlabeledTrain.tsv" is used which contains 50,000 additional reviews with no labels.
+The Word2Vec can learn from unlabeled data, these extra 50,000 reviews can now be used.
 
    #### There are a number of parameter choices that affect the run time and the quality of the final model that is produced.
    
