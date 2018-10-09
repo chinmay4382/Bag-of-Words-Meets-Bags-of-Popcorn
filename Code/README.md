@@ -11,8 +11,8 @@ negative.
 - pandas &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install pandas
 - numpy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pip3 install numpy
 - BeautifulSoup4 &nbsp; pip3 install bs4
-- nltk &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install nltk [Details](http://www.nltk.org/install.html)
-- gensim&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install gensim
+- nltk &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install nltk [Details](http://www.nltk.org/install.html)
+- gensim &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install gensim
 - sklearn &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install sklearn
 
 
@@ -42,5 +42,14 @@ It does two functions:
 ### [Random Forest](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
 (Random Forest uses many tree-based classifiers to make predictions, hence the "forest"). Below, we set the number of trees to 100 as a reasonable default value. More trees may (or may not) perform better, but will certainly take longer to run. Likewise, the more features you include for each review, the longer this will take.
+
+The classifier("forest") is built which can be further used to predict the sentiment of the data(test)
+
+### Prediction
+
+To predict the output of test data we use use the above built classifier on test data i.e testData.tsv. Here we only call 
+"transform", not "fit_transform" as we did for the training set. In machine learning, you shouldn't use the test set to fit your
+model, otherwise you run the risk of overfitting. 
+
 
 
