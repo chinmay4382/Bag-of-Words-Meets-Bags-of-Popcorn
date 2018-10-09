@@ -47,9 +47,13 @@ The classifier("forest") is built which can be further used to predict the senti
 
 ### Prediction
 
-To predict the output of test data we use use the above built classifier on test data i.e testData.tsv. Here we only call 
-"transform", not "fit_transform" as we did for the training set. In machine learning, you shouldn't use the test set to fit your
-model, otherwise you run the risk of overfitting. 
+To predict the output of test data we use use the above built classifier on test data i.e testData.tsv. Here only "transform",
+is called not "fit_transform" as did for the training set. In machine learning, if fit command is used on test data then
+there is risk of overfitting. 
+
+Overfitting is a process in which the model tends to memorise the train data and hence fail in predicting unseen data that
+results in failure of model built.
+
 
 
 
