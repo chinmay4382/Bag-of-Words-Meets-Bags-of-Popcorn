@@ -9,9 +9,9 @@ negative.
 
 ### Dependencies
 - pandas &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install pandas
-- numpy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pip3 install numpy
+- numpy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;pip3 install numpy
 - BeautifulSoup4 &nbsp; pip3 install bs4
-- nltk &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install nltk [Details](http://www.nltk.org/install.html)
+- nltk &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install nltk [Details](http://www.nltk.org/install.html)
 - gensim &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install gensim
 - sklearn &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; pip3 install sklearn
 
