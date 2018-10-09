@@ -1,5 +1,5 @@
 # Kaggle: Bag of Words Meets Bags of Popcorn
-Solution for the Kaggle Data Science competition "Bag of Words Meets Bags of Popcorn"
+This is a solution for the Kaggle Data Science competition "Bag of Words Meets Bags of Popcorn"
 
 https://www.kaggle.com/c/word2vec-nlp-tutorial
 
@@ -7,7 +7,7 @@ https://www.kaggle.com/c/word2vec-nlp-tutorial
 By learning from a list of already classified movie reviews, the algorithm needs to predict if a new one is either positive or 
 negative. 
 
-# Dependencies
+### Dependencies
 - pandas &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; pip3 install pandas
 - numpy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;pip3 install numpy
 - BeautifulSoup4 &nbsp; pip3 install bs4
