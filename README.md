@@ -18,29 +18,28 @@ This mini-project contains a practice of using Bag-of-Words with a Random Forest
 
 ### <a name="install"></a>Install
 
-This project requires **Python 2.7** and the following Python libraries installed:
+This project requires **Python 3** and the some Python libraries installed:
 
 - [NumPy](http://www.numpy.org/)
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
 - [nltk](http://www.nltk.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
-- [XGBoost](https://xgboost.readthedocs.io/en/latest/)
+- [Pandas](https://pandas.pydata.org/)
 
 You will also need to have software installed to run and execute a [Jupyter Notebook](http://jupyter.org/)
-
-Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
+ 
 
 
 ### <a name="code"></a>Code
 
-Complete code is provided in the `notebook.ipynb` notebook file. You will also be required to use the dataset file in `data` directory to complete your work.
+Complete code is provided in the `.ipynb` notebook file. You will also be required to use the dataset file in `data` directory to complete your work.
 
 
 ### <a name="run"></a>Run
 
 In a terminal or command window, navigate to the top-level project directory (that contains this README) and run the following command:
 
-```jupyter notebook notebook.ipynb```
+```jupyter notebook .ipynb```
 
 This will open the Jupyter Notebook software and project file in your browser.
 
