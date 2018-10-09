@@ -1,24 +1,17 @@
 # Kaggle: Bag of Words Meets Bags of Popcorn
 
 
-## Table of Contents  
-- [Project Overview](#project-overview)
-- [Install](#install)
-- [Code](#code)
-- [Run](#run)
-- [Data](#data)
 
-
-### <a name="project-overview"></a>Project Overview
+### Project Overview
 
 Project information can be found at [kaggle](https://www.kaggle.com/c/word2vec-nlp-tutorial).
 
-This mini-project contains a practice of using Bag-of-Words with a Random Forest Classifier to learn IMDB review text and predict review sentiment labels.
+This is a solution to Bag of words Meets Bags of popcorn competition held by Kaggle
 
 
-### <a name="install"></a>Install
+### Install
 
-This project requires **Python 3** and the some Python libraries installed:
+This project requires **Python 3** and the following Python libraries installed:
 
 - [NumPy](http://www.numpy.org/)
 - [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
@@ -30,12 +23,12 @@ You will also need to have software installed to run and execute a [Jupyter Note
  
 
 
-### <a name="code"></a>Code
+### Code
 
 Complete code is provided in the `.ipynb` notebook file. You will also be required to use the dataset file in `data` directory to complete your work.
 
 
-### <a name="run"></a>Run
+### Run
 
 In a terminal or command window, navigate to the top-level project directory (that contains this README) and run the following command:
 
