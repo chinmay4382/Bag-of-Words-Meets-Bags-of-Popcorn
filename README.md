@@ -18,6 +18,7 @@ This project requires **Python 3** and the following Python libraries installed:
 - [nltk](http://www.nltk.org/)
 - [scikit-learn](http://scikit-learn.org/stable/)
 - [Pandas](https://pandas.pydata.org/)
+- [Keras](https://keras.io/)
 
 You will also need to have software installed to run and execute a [Jupyter Notebook](http://jupyter.org/)
  
@@ -25,19 +26,19 @@ You will also need to have software installed to run and execute a [Jupyter Note
 
 ### Code
 
-Complete code is provided in the `.ipynb` notebook file. You will also be required to use the dataset file in `data` directory to complete your work.
+Complete code is provided in the `Final.ipynb` notebook file. You will also be required to use the dataset file in `data` directory to complete your work.
 
 
 ### Run
 
 In a terminal or command window, navigate to the top-level project directory (that contains this README) and run the following command:
 
-```jupyter notebook .ipynb```
+```jupyter notebook Final.ipynb```
 
 This will open the Jupyter Notebook software and project file in your browser.
 
 
-### <a name='data'></a>Data
+### Data
 
 Training and test data can be downloaded [here](https://www.kaggle.com/c/word2vec-nlp-tutorial/data).
 
