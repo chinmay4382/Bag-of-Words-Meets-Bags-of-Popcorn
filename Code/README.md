@@ -39,11 +39,15 @@ It does two functions:
 **Second,** it transforms our training data into feature vectors.
 
 
-### [Random Forest](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+### [Multilayer Perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
 
-(Random Forest uses many tree-based classifiers to make predictions, hence the "forest"). Below, we set the number of trees to 100 as a reasonable default value. More trees may (or may not) perform better, but will certainly take longer to run. Likewise, the more features you include for each review, the longer this will take.
+A multilayer perceptron (MLP) is a class of [feedforward](https://en.wikipedia.org/wiki/Feedforward_neural_network) [artificial 
+neural network](https://en.wikipedia.org/wiki/Artificial_neural_network). An MLP consists of, at least, three layers of nodes: 
+an input layer, a hidden layer and an output layer. Except for the input nodes, each node is a neuron that uses a nonlinear 
+activation function. MLP utilizes a [supervised learning](https://en.wikipedia.org/wiki/Supervised_learning) technique called 
+[backpropagation](https://en.wikipedia.org/wiki/Backpropagation) for training.Its multiple layers and non-linear activation 
+distinguish MLP from a linear perceptron. It can distinguish data that is not linearly separable
 
-The classifier("forest") is built which can be further used to predict the sentiment of the data(test)
 
 ### Prediction
 
